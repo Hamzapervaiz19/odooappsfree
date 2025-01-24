@@ -13,7 +13,7 @@
     "data": [
         "views/sale_order_form_view.xml",
     ],
-    'images': ['static/description/banner.png'],
+    'images': ['static/description/banner.jpg'],
     "installable": True,
     "application": False,
     "auto_install": False,
