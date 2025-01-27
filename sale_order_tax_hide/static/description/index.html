@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Odoo module to hide the tax field from sale order lines in the Sale Order form view.">
+    <meta name="author" content="Your Name">
+    <meta name="keywords" content="Odoo, Sale Order, Tax Field, Hide Tax, Odoo Customization">
+    <title>Hide Taxes from Sale Order Lines</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: auto;
+            max-width: 800px;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1, h2, h3 {
+            color: #007bff;
+        }
+        ul {
+            list-style-type: square;
+            margin: 10px 0 10px 20px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hide Taxes from Sale Order Lines</h1>
+        <p>Simplify your Sale Order forms by removing unnecessary tax fields.</p>
+    </header>
+    <section>
+        <h2>Overview</h2>
+        <p>This Odoo module customizes the Sale Order form view by hiding the tax column from the Sale Order Lines. It's designed for businesses that don't need to manage taxes on a per-line basis and prefer a cleaner interface.</p>
+        
+        <h2>Features</h2>
+        <ul>
+            <li>Hides the <strong>tax_id</strong> field in the Sale Order Lines.</li>
+            <li>Improves the user interface by removing unnecessary details.</li>
+            <li>Seamlessly integrates with Odoo's default Sales module.</li>
+        </ul>
+        
+        <h2>Technical Details</h2>
+        <p><strong>Compatible with:</strong> Odoo 18.0</p>
+        <p><strong>Dependencies:</strong> Sale Module</p>
+        
+        <h2>Installation</h2>
+        <ol>
+            <li>Copy the module folder <strong>sale_order_tax_hide</strong> to your Odoo <code>addons</code> directory.</li>
+            <li>Restart the Odoo server:</li>
+            <pre><code>./odoo-bin restart</code></pre>
+            <li>Update the app list in Odoo.</li>
+            <li>Search for <strong>"Hide Taxes from Sale Order Lines"</strong> in the Apps menu and install it.</li>
+        </ol>
+        
+        <h2>Usage</h2>
+        <p>Once installed, the module will automatically hide the tax column from Sale Order Lines. No additional configuration is required.</p>
+        
+        <h2>Support</h2>
+        <p>If you encounter any issues or have questions, please feel free to contact the developer at:</p>
+        <p><strong>Email:</strong> yourname@example.com</p>
+        <p><strong>Website:</strong> <a href="https://yourwebsite.com">https://yourwebsite.com</a></p>
+    </section>
+    <div class="footer">
+        &copy; 2025 Your Name. All rights reserved.
+    </div>
+</body>
+</html>
+
