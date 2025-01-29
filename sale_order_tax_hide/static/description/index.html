@@ -37,6 +37,18 @@
             list-style-type: square;
             margin: 10px 0 10px 20px;
         }
+        picture {
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
         .footer {
             text-align: center;
             margin-top: 20px;
@@ -53,6 +65,19 @@
     <section>
         <h2>Overview</h2>
         <p>This Odoo module customizes the Sale Order form view by hiding the tax column from the Sale Order Lines. It's designed for businesses that don't need to manage taxes on a per-line basis and prefer a cleaner interface.</p>
+        
+        <h2>Visual Comparison</h2>
+        <p>See how the interface changes after installing the module:</p>
+        
+        <picture>
+            <h3>Before Installing the Module:</h3>
+            <img src="before-install.png" alt="Before installing the module - Sale Order Lines with tax field visible">
+        </picture>
+        
+        <picture>
+            <h3>After Installing the Module:</h3>
+            <img src="after-install.png" alt="After installing the module - Sale Order Lines with tax field hidden">
+        </picture>
         
         <h2>Features</h2>
         <ul>
