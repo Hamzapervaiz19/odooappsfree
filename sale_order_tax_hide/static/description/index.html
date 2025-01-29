@@ -8,52 +8,158 @@
     <meta name="keywords" content="Odoo, Sale Order, Tax Field, Hide Tax, Odoo Customization">
     <title>Hide Taxes from Sale Order Lines</title>
     <style>
+        /* General Styles */
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background: linear-gradient(135deg, #f9f9f9, #e6f4f9);
             color: #333;
         }
+
         header {
-            background: #007bff;
+            background: linear-gradient(135deg, #007bff, #00a8ff);
             color: white;
-            padding: 10px 0;
+            padding: 60px 0;
             text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0 0;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
         section {
-            padding: 20px;
-            margin: auto;
+            padding: 40px;
+            margin: 40px auto;
             max-width: 800px;
             background: white;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            border-radius: 12px;
+            animation: fadeIn 1.5s ease-in-out;
         }
+
         h1, h2, h3 {
             color: #007bff;
         }
+
+        h2 {
+            margin-top: 20px;
+            font-size: 2em;
+            border-bottom: 2px solid #007bff;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
         ul {
             list-style-type: square;
             margin: 10px 0 10px 20px;
         }
+
         picture {
             display: block;
             margin: 20px auto;
             text-align: center;
         }
+
         img {
             max-width: 100%;
             height: auto;
             border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
+        img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
         .footer {
             text-align: center;
-            margin-top: 20px;
+            margin-top: 40px;
+            padding: 20px;
+            background: linear-gradient(135deg, #007bff, #00a8ff);
+            color: white;
             font-size: 0.9em;
-            color: #666;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            background: #007bff;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #0056b3;
+        }
+
+        /* Code Blocks */
+        pre {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            color: #333;
         }
     </style>
 </head>
@@ -61,6 +167,7 @@
     <header>
         <h1>Hide Taxes from Sale Order Lines</h1>
         <p>Simplify your Sale Order forms by removing unnecessary tax fields.</p>
+        <a href="#installation" class="btn">Get Started</a>
     </header>
     <section>
         <h2>Overview</h2>
@@ -90,7 +197,7 @@
         <p><strong>Compatible with:</strong> Odoo 18.0</p>
         <p><strong>Dependencies:</strong> Sale Module</p>
         
-        <h2>Installation</h2>
+        <h2 id="installation">Installation</h2>
         <ol>
             <li>Copy the module folder <strong>sale_order_tax_hide</strong> to your Odoo <code>addons</code> directory.</li>
             <li>Restart the Odoo server:</li>
@@ -104,12 +211,11 @@
         
         <h2>Support</h2>
         <p>If you encounter any issues or have questions, please feel free to contact the developer at:</p>
-        <p><strong>Email:</strong> yourname@example.com</p>
+        <p><strong>Email:</strong> <a href="mailto:yourname@example.com">yourname@example.com</a></p>
         <p><strong>Website:</strong> <a href="https://yourwebsite.com">https://yourwebsite.com</a></p>
     </section>
     <div class="footer">
-        &copy; 2025 Your Name. All rights reserved.
+        &copy; 2025 Your Name. All rights reserved. | <a href="https://yourwebsite.com">Visit Website</a>
     </div>
 </body>
 </html>
-
