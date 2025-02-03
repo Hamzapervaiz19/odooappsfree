@@ -22,10 +22,10 @@
     'data': [],
     'assets': {
         'web.assets_backend': [
-            'drag_and_drop_binary_field/static/src/js/field_binary.js',
-            'drag_and_drop_binary_field/static/src/js/field_image.js',
-            'drag_and_drop_binary_field/static/src/js/many.js',
-            'drag_and_drop_binary_field/static/src/css/style.css',
+            'legion_drag_and_drop_binary_field/static/src/js/field_binary.js',
+            'legion_drag_and_drop_binary_field/static/src/js/field_image.js',
+            'legion_drag_and_drop_binary_field/static/src/js/many.js',
+            'legion_drag_and_drop_binary_field/static/src/css/style.css',
         ],
     },
     "post_load": None,

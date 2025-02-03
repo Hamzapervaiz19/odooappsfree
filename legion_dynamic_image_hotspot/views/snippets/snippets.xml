@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="image_hotspot_snippet_options"
+              inherit_id="web_editor.snippet_options"
+              name="Image Hotspot Snippet Options">
+        <xpath expr="//we-button[@data-name='image_transform_opt']"
+               position="after">
+            <div data-js='ImageHotspot' data-selector="img"
+                 data-exclude="[data-oe-type='image'] > img, [data-oe-xpath]"
+                 class="o_we_image_options">
+
+                <we-row class="product-variant-row">
+                    <we-many2one string="Choose Variant"
+                                 data-model="product.product"
+                                 data-no-preview="true"
+                                 data-name="product_product_picker_opt"
+                                 data-set-product-product=""
+                    />
+                    <we-button data-name="product_product_reset_opt"
+                               class="reset-product-product-picker align-self-end fa fa-fw fa-times">
+                    </we-button>
+                </we-row>
+
+                <we-button class="product-variant-row-button o_hidden"
+                           title="Add Hotspot"
+                           data-image-hotspot="on"
+                           data-name="add_hotspot_opt"
+                           data-no-preview="true">Add Hotspot
+                </we-button>
+
+            </div>
+        </xpath>
+    </template>
+
+
+    <template id="s_hotspot_options" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <div data-js="ImageHotspot" data-selector=".hotspot">
+                <t t-set="move_horizon_label">
+                    Move Horizontal
+                </t>
+                <we-range id="my-range-widget" t-att-string="move_horizon_label"
+                          t-att-class="indent and 'o_we_sublevel_2'"
+                          data-min="3" data-step="1" data-max="95"
+                          data-set-horizontal="setHorizontal"/>
+                <t t-set="move_vertical_label">
+                    Move Vertical
+                </t>
+                <we-range id="my-range-widget2"
+                          t-att-string="move_vertical_label"
+                          t-att-class="indent and 'o_we_sublevel_2'"
+                          data-min="3" data-step="1" data-max="95"
+
+                          data-set-vertical="setVertical"/>
+
+            </div>
+        </xpath>
+    </template>
+
+    <template id="s_setting_quantity" name="Hotspot">
+        <section class="s_setting_quantity bg-light py-3 text-dark" data-snippet="s_setting_quantity">
+            <div class="container s_setting_quantity_c">
+
+                <div class="row mt-2">
+                    <img src="/legion_dynamic_image_hotspot/static/src/img/hotspot_cover.jpg"/>
+                </div>
+            </div>
+        </section>
+    </template>
+
+
+    <record id="website_snippets" model="ir.ui.view">
+        <field name="name">Add Setting Quantity</field>
+        <field name="type">qweb</field>
+        <field name="key">website.snippets</field>
+        <field name="inherit_id" ref="website.snippets"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='snippet_structure']/div[hasclass('o_panel_body')]" position="inside">
+                <t t-snippet="legion_dynamic_image_hotspot.s_setting_quantity"
+                   t-thumbnail="/legion_dynamic_image_hotspot/static/src/img/icon.jpeg"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
