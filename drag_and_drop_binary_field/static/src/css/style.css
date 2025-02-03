@@ -1,0 +1,10 @@
+.o_field_drag_drop_and_paste_image div[aria-atomic="true"] {
+    height: 140px !important;
+}
+
+.o_field_drag_drop_and_paste_image .o_select_file_button  {
+      background-color: transparent;
+}
+.o_field_drag_drop_and_paste_image .o_clear_file_button  {
+      background-color: transparent;
+}
