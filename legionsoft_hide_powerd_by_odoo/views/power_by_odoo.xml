@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="mail_notification_layout" inherit_id="mail.mail_notification_layout">
+            <xpath expr="//div[contains(@style, 'color: #555555; font-size:11px;')]" position="replace">
+                <div style="color: #555555; font-size:11px; margin-top: 10px;">
+                    <img t-att-src="'/web/image/res.company/%s/logo' % company.id"
+                         t-att-alt="company.name"
+                         style="max-width: 70px; max-height: 50px; vertical-align: middle;"/>
+                </div>
+            </xpath>
+        </template>
+    </data>
+</odoo>
