@@ -20,7 +20,7 @@
 
         ],
     },
-    'images': ['static/description/icon.png'],
+            'images': ['static/description/banner.gif'],
     'license': 'AGPL-3',
     'installable': True,
     'auto_install': False,
