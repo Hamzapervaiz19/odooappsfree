@@ -28,7 +28,7 @@
             'legion_drag_and_drop_binary_field/static/src/css/style.css',
         ],
     },
-        'images': ['static/description/banner.jpg'],
+        'images': ['static/description/banner.gif'],
     "post_load": None,
     "pre_init_hook": None,
     "post_init_hook": None,
