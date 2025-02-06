@@ -4,9 +4,9 @@
     'category': 'Tools',
     'license': 'LGPL-3',
 
-    "author": "Bytelegion",
-    "website": "http://www.bytelegions.com",
-    'company': 'Bytelegion',
+    "author": "Legion Soft",
+    "website": "http://www.legionsoft.com",
+    'company': 'Legion Soft',
 
     'summary': """ Hide Powered By Odoo login screen, 
             This module modifies the functionality of emails to remove the Odoo branding.
@@ -26,6 +26,8 @@
         'views/login_templates.xml',
 
     ],
+    'price': 9.99,
+    'currency': 'USD',
 
 
     'demo': [],
