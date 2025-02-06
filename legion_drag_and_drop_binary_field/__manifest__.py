@@ -11,9 +11,9 @@
         dealing with binary fields. 
         """,
     'license': 'OPL-1',
-    'price': 0,
-    'currency': 'EUR',
-    'author': "Byte Legions",
+    'price': 19.99,
+    'currency': 'USD',
+    'author': "Legion Soft",
     'images': [
         'static/description/main.png',
     ],
