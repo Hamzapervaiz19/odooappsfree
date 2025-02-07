@@ -11,7 +11,7 @@
         dealing with binary fields. 
         """,
     'license': 'OPL-1',
-    'price': 19.99,
+    'price': 14.99,
     'currency': 'USD',
     'author': "Legion Soft",
     'images': [

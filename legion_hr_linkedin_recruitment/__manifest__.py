@@ -25,7 +25,7 @@
         {
         'python': ['mechanize', 'linkedin'],
         },
-      'price': 29.99,
+      'price': 19.99,
     'currency': 'USD',
     'images': ['static/description/banner.gif'],
     'license': 'OPL-1',
